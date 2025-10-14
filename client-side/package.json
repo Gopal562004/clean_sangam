@@ -2,39 +2,12 @@
   "name": "alumni-management-platform",
   "version": "0.1.0",
   "private": true,
-  "rocketCritical": {
-    "dependencies": [
-      "@dhiwise/component-tagger",
-      "react",
-      "react-dom",
-      "@reduxjs/toolkit",
-      "redux",
-      "react-router-dom"
-    ],
-    "devDependencies": [
-      "@vitejs/plugin-react",
-      "vite",
-      "vite-tsconfig-paths",
-      "tailwindcss",
-      "autoprefixer",
-      "postcss"
-    ],
-    "scripts": [
-      "start",
-      "build",
-      "serve"
-    ],
-    "warning": "🚨 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for app functionality"
-  },
   "dependencies": {
     "@dhiwise/component-tagger": "^1.0.10",
     "@radix-ui/react-slot": "^1.2.3",
     "@reduxjs/toolkit": "^2.6.1",
     "@tailwindcss/forms": "^0.5.7",
     "@tanstack/react-query": "^5.89.0",
-    "@testing-library/jest-dom": "^5.15.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
     "axios": "^1.8.4",
     "chart.js": "^4.5.0",
     "class-variance-authority": "^0.7.1",
@@ -51,7 +24,7 @@
     "react-hook-form": "^7.55.0",
     "react-icons": "^5.5.0",
     "react-qr-code": "^2.0.18",
-    "react-qr-reader": "^3.0.0-beta-1",
+    "react-qr-scanner": "^1.0.2",
     "react-router-dom": "6.0.2",
     "react-router-hash-link": "^2.4.3",
     "react-toastify": "^11.0.5",
@@ -67,24 +40,6 @@
     "start": "vite",
     "build": "vite build --sourcemap",
     "serve": "vite preview"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
