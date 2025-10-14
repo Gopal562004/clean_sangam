@@ -27,7 +27,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-toastify": "^11.0.5",
     "react-hot-toast": "^2.4.0",
-    "@zxing/browser": "^0.0.15"
+    "@zxing/browser": "^0.0.15",
     "recharts": "^2.15.2",
     "redux": "^5.0.1",
     "tailwind-merge": "^3.3.1",
