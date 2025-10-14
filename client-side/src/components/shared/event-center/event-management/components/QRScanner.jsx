@@ -755,7 +755,7 @@
 
 // export default QRScanner;
 import React, { useRef, useState } from "react";
-import { BrowserQRCodeReader } from "@zxing/library";
+import { BrowserQRCodeReader } from "@zxing/browser";
 import Icon from "../../../../AppIcon";
 import Button from "../../../../ui/Button";
 
