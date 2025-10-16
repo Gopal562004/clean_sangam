@@ -45,7 +45,7 @@ const Header = ({ user = null, notifications = [], onLogout = () => {} }) => {
       icon: "LayoutDashboard",
     },
     {
-      label: "Career Directory",
+      label: "Directory",
       path:
         user?.role === "admin"
           ? "/admin/directory"
@@ -90,22 +90,22 @@ const Header = ({ user = null, notifications = [], onLogout = () => {} }) => {
       icon: "Briefcase",
     },
     {
-      label: "Career Resources",
+      label: "Donations",
       path:
         user?.role === "admin"
-          ? "/admin/resources"
+          ? "/admin/donations"
           : user?.role === "faculty"
-          ? "/faculty/resources"
+          ? "/faculty/donations"
           : user?.role === "alumni"
-          ? "/alumni/resources"
+          ? "/alumni/donations"
           : user?.role === "recruiter"
-          ? "/recruiter/resources"
-          : "/student/resources",
+          ? "/recruiter/donations"
+          : "/student/donations",
       roles: ["admin", "faculty", "alumni", "student", "recruiter"],
-      icon: "BookOpen",
+      icon: "Heart",
     },
     {
-      label: "Career Events",
+      label: "Events",
       path:
         user?.role === "admin"
           ? "/admin/events"
@@ -145,26 +145,17 @@ const Header = ({ user = null, notifications = [], onLogout = () => {} }) => {
 
   const isActivePath = (path) => location.pathname === path;
 
-    const Logo = () => (
-  <a 
-    href="https://update-gradify-ai-carrer-coach.vercel.app/" 
-    rel="noopener noreferrer"
-    className="flex items-center space-x-3 group"
-  >
-    <div className="relative w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-      <span className="text-white font-bold text-lg">AI</span>
-      <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-1000 group-hover:duration-200"></div>
-    </div>
-    <div className="flex flex-col">
-      <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-        Ai-Career
-      </span>
-      <span className="text-xs text-gray-500 -mt-1">
-        Intelligent Career Platform
-      </span>
-    </div>
-  </a>
-);
+  const Logo = () => (
+    <Link to="/" className="flex items-center space-x-3">
+      <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+        <Icon name="GraduationCap" size={24} color="white" />
+      </div>
+      <div className="flex flex-col">
+        <span className="text-xl font-semibold text-text-primary">Sangam</span>
+        <span className="text-xs text-text-secondary">Management Platform</span>
+      </div>
+    </Link>
+  );
 
   return (
     <header className="bg-surface border-b border-border sticky top-0 z-50 elevation-1">
